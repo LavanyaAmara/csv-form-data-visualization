@@ -1,0 +1,95 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e8eaf6);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* ===== Title ===== */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  color: #1b2733;
+  letter-spacing: 1px;
+}
+
+/* ===== File Input ===== */
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f0f4f8;
+  transition: 0.3s;
+  font-size: 1em;
+}
+input[type="file"]:hover {
+  background-color: #dce4f0;
+}
+
+/* ===== Dashboard Grid ===== */
+#dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* ===== Chart Card ===== */
+.chart-card {
+  background: #fdfdfd;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.08),
+              -8px -8px 20px rgba(255,255,255,0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 12px 12px 25px rgba(0,0,0,0.15),
+              -12px -12px 25px rgba(255,255,255,0.9);
+}
+
+/* ===== Chart Title ===== */
+.chart-card h2 {
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #2c3e50;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Canvas ===== */
+canvas {
+  width: 100% !important;
+  height: 350px !important;
+}
+
+/* ===== Responsive Text ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  .chart-card {
+    padding: 20px;
+  }
+  canvas {
+    height: 300px !important;
+  }
+}
